@@ -1,0 +1,31 @@
+:root {
+    --bg-color:#181C18;
+    --text-color: #ffffff;
+    --font-para : 'Roboto Mono';
+    --font-title : 'Verdana';
+}
+
+body{
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: var(--bg-color);
+    box-shadow: #ffffff;
+}
+
+.active{
+    color: white;
+}
+
+#navMainHead{
+    color: white;
+
+}
+.nav-link{
+    align-items: right;
+    
+}
+a{
+}
