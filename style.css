@@ -20,9 +20,21 @@ body{
 }
 
 #navMainHead{
-    color: white;
+    color: lightblue;
+    font-weight: 600;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
 
 }
+#navSubHead{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+
+    
+}
+
 .nav-link{
     align-items: right;
     
