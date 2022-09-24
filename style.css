@@ -1,3 +1,4 @@
+/* global variables  */
 :root {
     --bg-color:#181C18;
     --text-color: #ffffff;
@@ -5,39 +6,50 @@
     --font-title : 'Verdana';
 }
 
-body{
-    background-color: var(--bg-color);
-    margin: 0;
-    padding: 0;
-}
+/* navbar  */
+
 .navbar{
-    background-color: var(--bg-color);
-    box-shadow: #ffffff;
+    background: #181C18;
 }
 
-.active{
-    color: white;
+
+/* carousal  */
+/* adding slider image */
+.carousel{
+    background: url(/images/3.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#navMainHead{
-    color: lightblue;
-    font-weight: 600;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    
-
-}
-#navSubHead{
-    color: white;
-    margin: 0px;
-    padding: 0px;
-
-    
+/* this gives an black overley to  slider image*/
+.carousel::before{
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: black;
+    opacity: 0.6;
 }
 
-.nav-link{
-    align-items: right;
-    
+.carousel-item{
+    padding-left: 10vw;
+    padding-top: 15vh;
 }
-a{
+
+/* @media screen and (min-width: 480px) {
+    .carousel {
+      height: 40vh;
+    }
+  } */
+
+.card{
+    height: 16rem;
+    width: 16rem;
 }
+
+
+
+
+
+
