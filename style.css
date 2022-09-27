@@ -1,52 +1,116 @@
 /* global variables  */
 :root {
-    --bg-color:#181C18;
-    --text-color: #ffffff;
+    --bg-color:#f7deb8cf;
+    --color-primary: #545050;
+    --color-secondary: rgba(13, 99, 108, 0.938);
+    --color-third : rgb(255, 255, 255);
     --font-para : 'Roboto Mono';
     --font-title : 'Verdana';
 }
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+}
+.section-heading{
+    color: var(--color-secondary);
+    margin-top: 1rem;
+}
 
 /* navbar  */
+#navbar{
+    background:var(--bg-color);
 
-.navbar{
-    background: #181C18;
 }
+
+#navbarBranding > h4{
+    color: var(--color-secondary);
+}
+#navbarBranding > p{
+    color: var(--color-primary)
+}
+#navLinks > li > a{
+    color: var(--color-secondary);
+}
+
 
 
 /* carousal  */
 /* adding slider image */
-.carousel{
-    background: url(/images/3.jpg);
-    height: 60vh;
+#carouselMain{
+    background: var(--bg-color);
+    height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
-}
+}   
 
 /* this gives an black overley to  slider image*/
-.carousel::before{
+#carouselMain::before{
     content: "";
     position: absolute;
     left: 0; right: 0;
     top: 0; bottom: 0;
     background: black;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 
-.carousel-item{
+#carouselMain-item{
     padding-left: 10vw;
     padding-top: 15vh;
 }
 
-/* @media screen and (min-width: 480px) {
-    .carousel {
-      height: 40vh;
-    }
-  } */
-
-.card{
-    height: 16rem;
-    width: 16rem;
+#carouselMain-item >h1 >span{
+    color: var(--color-secondary);
 }
+
+
+#card1 > h6 {
+    color: var(--color-secondary);
+}
+
+#card1 > p{
+    color: var(--color-primary);
+}
+
+#card1 > i{
+    color: var(--color-secondary);
+    font-size: 2.5rem;
+}
+
+
+#card1{
+    width: 20rem;
+    border: solid var(--color-secondary);
+    background: var(--bg-color);
+}
+
+#card1:hover{
+    background-color:rgb(198,178,149);
+}
+
+section{
+    height: 80vh;
+}
+
+footer > div > a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-third);
+}
+
+footer > div{
+    
+}
+
+footer{
+    background: var(--color-primary);
+}
+
+
+
+
+
+
 
 
 
