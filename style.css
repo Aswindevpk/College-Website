@@ -1,8 +1,8 @@
 /* global variables  */
 :root {
-    --bg-color:#f7deb8cf;
-    --color-primary: #545050;
-    --color-secondary: rgba(13, 99, 108, 0.938);
+    --bg-color:rgb(253, 253, 253);  
+    --color-primary: rgb(107, 106, 102);
+    --color-secondary: rgb(26, 26, 86);
     --color-third : rgb(255, 255, 255);
     --font-para : 'Roboto Mono';
     --font-title : 'Verdana';
@@ -14,23 +14,32 @@ body{
 }
 .section-heading{
     color: var(--color-secondary);
+    font-family: var(--font-title);
     margin-top: 1rem;
 }
 
 /* navbar  */
 #navbar{
-    background:var(--bg-color);
-
+    background: rgb(244, 237, 237);
 }
 
 #navbarBranding > h4{
     color: var(--color-secondary);
+    font-weight: 800;
+    font-size: 1.8rem;
 }
+/* #navbarBranding > h4 > span{
+    color: var(--color-primary);
+    font-weight: 800;
+    font-size: 2rem;
+} */
+
 #navbarBranding > p{
     color: var(--color-primary)
 }
 #navLinks > li > a{
     color: var(--color-secondary);
+    font-weight: 600;
 }
 
 
@@ -38,11 +47,12 @@ body{
 /* carousal  */
 /* adding slider image */
 #carouselMain{
-    background: var(--bg-color);
+    /* background: url(./images/3.jpg); */
     height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
 }   
+
 
 /* this gives an black overley to  slider image*/
 #carouselMain::before{
@@ -50,8 +60,8 @@ body{
     position: absolute;
     left: 0; right: 0;
     top: 0; bottom: 0;
-    background: black;
-    opacity: 0.2;
+    background:var(--color-primary);
+    opacity: 0.5;
 }
 
 #carouselMain-item{
@@ -59,8 +69,9 @@ body{
     padding-top: 15vh;
 }
 
-#carouselMain-item >h1 >span{
+#carouselMain-item >h1{
     color: var(--color-secondary);
+    font-weight: 700;
 }
 
 
@@ -69,7 +80,7 @@ body{
 }
 
 #card1 > p{
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 #card1 > i{
@@ -94,13 +105,10 @@ section{
 
 footer > div > a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--color-third);
 }
 
-footer > div{
-    
-}
 
 footer{
     background: var(--color-primary);
