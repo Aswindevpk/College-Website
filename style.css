@@ -16,6 +16,7 @@ body{
     color: var(--color-secondary);
     font-family: var(--font-title);
     margin-top: 1rem;
+    font-weight: 550;
 }
 
 /* navbar  */
@@ -35,11 +36,15 @@ body{
 } */
 
 #navbarBranding > p{
-    color: var(--color-primary)
+    color: var(--color-primary);
 }
 #navLinks > li > a{
     color: var(--color-secondary);
-    font-weight: 600;
+    font-weight: 700;
+}
+#navLinks > li > a:hover{
+    color: rgba(13, 155, 32, 0.699); 
+    font-weight: 700;
 }
 
 
@@ -74,6 +79,11 @@ body{
     font-weight: 700;
 }
 
+#carouselMain-item > p{
+    color: white;
+}
+
+
 
 #card1 > h6 {
     color: var(--color-secondary);
@@ -91,8 +101,8 @@ body{
 
 #card1{
     width: 20rem;
-    border: solid var(--color-secondary);
     background: var(--bg-color);
+    border: none;
 }
 
 #card1:hover{
