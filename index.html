@@ -16,11 +16,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="c=consectetur">
 
   <!-- navbar -->
   <div>
-    <nav id="navbar" class="navbar navbar-expand-sm fixed-top ">
+    <nav id="navbar" class="navbar navbar-expand-sm fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand d-flex" href="#">
           <div id="navbarBranding">
@@ -35,19 +35,19 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
           <ul id="navLinks" class="navbar-nav">
             <li class="nav-item col-xl-4">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#carouselMain">Home</a>
             </li>
             <li class="nav-item col-xl-4">
-              <a class="nav-link" href="#">Events</a>
+              <a class="nav-link" href="#events">Events</a>
             </li>
             <li class="nav-item col-xl-4">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="#our-college">Our college</a>
             </li>
             <li class="nav-item col-xl-4">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item col-xl-4">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#contact">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -69,7 +69,7 @@
         <h1>Devagiri Students Portal</h1>
         <p class="lead col-md-6 col-10"> A website for all devagirians to know and intract
           we provide a virtual extravaganza for all.</p>
-          <button type="button" class="btn btn-dark">Know more</button>
+          <button type="button" class="btn btn-dark" href="./sample.html">Know more</button>
           <button type="button" class="btn btn-outline-secondary">Contact Us</button>
       </div>
       <div id="carouselMain-item" class="carousel-item">
@@ -87,46 +87,91 @@
     </div>
   </div>
 
-  <div class="h2 section-heading text-center">Our Devagiri</div>
+  <div id="events" class="container-fluid">
+    <div class="h2 section-heading">Updates</div>
+    <div class=" bg-secondary"style="height:0.3rem;width:3rem;margin-bottom:1rem;"></div>
+    <div class="bg-warning rounded mb-3">
+      <div class="p-3">
+        <h4 class="text-light section-para">Program 1</h4>
+        <p class="section-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus assumenda quisquam dicta consectetur rerum? Distinctio libero sequi, fuga nobis eius magnam expedita atque molestias vel fugit at blanditiis nihil. Eum.</p>
+        <button class="btn btn-secondary">Register</button>
+      </div>
+    </div>
+    <div class="bg-warning rounded mb-3">
+      <div class="p-3">
+        <h4 class="text-light section-para">Program 1</h4>
+        <p class="section-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus assumenda quisquam dicta consectetur rerum? Distinctio libero sequi, fuga nobis eius magnam expedita atque molestias vel fugit at blanditiis nihil. Eum.</p>
+        <button class="btn btn-secondary">Register</button>
+      </div>
+    </div>
+    
+  </div>
+  
 
+  
+  <div id="our_college" class="container-fluid">
+    <hr>
+  <div class="h2 section-heading">Our College</div>
+  <div class=" bg-secondary"style="height:0.3rem;width:3rem;margin-bottom:1rem;"></div>
   <div class="text-center">
-    <div class="row justify-content-center">
-      <div id="card1" class="col card col-xl-4 col-12 col-md-6 m-3 ">
-        <i class="bi bi-book p-2"></i>
-        <h6 class=" h3 text-center">Library</h6>
+    <div class="row justify-content-center pb-5">
+      <div id="card1" class="col card col-4">
+        <a href="./sample.html">
+          <i class="bi bi-journal-richtext"></i>
+          <h6 class="text-center">Library</h6>
+        </a>
       </div>
-      <div id="card1" class="col card col-xl-4 col-12 col-md-6 m-3">
-        <i class="bi bi-tree p-2"></i>
-        <h6 class=" h3 text-center">Thanal</h6>
+      <div id="card1" class="col card col-4">
+        <a href="./sample.html">
+          <i class="bi bi-people "></i>
+          <h6 class="text-center">Thanal</h6>
+        </a>
       </div>
-      <div id="card1" class="col card col-xl-4 col-12 col-md-6 m-3">
-        <i class="bi bi-controller p-2"></i>
-        <h6 class=" h3 text-center">Indore</h6>
+      <div id="card1" class="col card col-4">
+        <a href="./sample.html">
+          <i class="bi bi-cup-straw"></i>
+          <h6 class="text-center">Cafeteria</h6>
+        </a>
       </div>
-      <div id="card1" class="col card col-xl-4 col-12 col-md-6 m-3">
-        <i class="bi bi-cup-straw  p-2"></i>
-        <h6 class=" h3 text-center">Canteen</h6>
+      <div id="card1" class="col card col-4">
+        <a href="./sample.html">
+          <i class="bi bi-laptop"></i>
+          <h6 class="text-center">Lab</h6>
+        </a>
+      </div>
+      <div id="card1" class="col card col-4">
+        <a href="./sample.html">
+          <i class="bi bi-building"></i>
+          <h6 class="text-center">Old block</h6>
+        </a>
+      </div>
+      <div id="card1" class="col card col-4">
+        <a href="./sample.html">
+          <i class="bi bi-flower1"></i>
+          <h6 class="text-center">garden</h6>
+        </a>
       </div>
     </div>
   </div> 
+  </div>
+  
 
   
-  <div class="row container-fluid">
+  <div id="about" class="row m-0">
     <hr>
     <div class="col col-12 col-md-6">
-      <div class="h2 section-heading d-inline align-left pb-3">About Us</div>
-      <div class=" bg-secondary"style="height:0.3rem;width:3rem"></div>
-      <p class="align-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur explicabo eligendi reprehenderit at neque, totam veniam quidem nihil vero tempore.</p>
-    </div>
-    <div class="col text-center col-12 col-md-6">
-      <img class="p-2" style="border-radius: 1rem;" src="./images/3.jpg" alt="">
-      <img class="p-2" style="border-radius: 1rem;" src="./images/2.jpg" alt="">
+      <div class="h2 section-heading d-inline pb-3">About Us</div>
+      <div class=" bg-secondary"style="height:0.3rem;width:3rem;margin-bottom:1rem;"></div>
+      <p class="section-para text-dark">This portal is controlled and coordinated by BCA 21-24 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima harum cum recusandae laborum quos porro modi deserunt tempore ipsa temporibus, culpa repellat aperiam nam officiis tempora. Dignissimos, culpa obcaecati.</p>
+    </div> 
+    <div class=" col col-12 col-md-6 pb-2 bg-image hover-zoom">
+      <img class="" src="./images/bca_group1.jpeg" alt="" style="width:100%;">
     </div>
   </div>
 
   
 
-  <footer class="text-center">
+  <footer id="contact" class="text-center">
     <div class="pb-2">
       <a href="">
         <i class="bi bi-whatsapp px-3"></i>
@@ -134,18 +179,17 @@
       <a href="">
         <i class="bi bi-discord px-3"></i></i>
       </a>
-      <a href="">
+      <a href="https://instagram.com/bca.sjc?igshid=YmMyMTA2M2Y=">
         <i class="bi bi-instagram px-3"></i>
       </a>
     </div>
-    <!-- Copyright -->
+  
     <div class="pb-1">
       <div class="text-center text-light" >
         © 2022 Copyrights
         <a class= "text-white text-center" href="#" style="text-decoration: none;">devagiristudents.com</a>
       </div>
     </div>
-    <!-- Copyright -->
   </footer>
 
 
