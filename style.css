@@ -7,60 +7,74 @@
     --font-para : 'Roboto Mono';
     --font-title : 'Verdana';
 }
+
+/* common proporty for the website it applies to the body */
 body{
     margin: 0;
     padding: 0;
     background: var(--bg-color);
 }
+/* heading styling  */
 .section-heading{
     color: var(--color-secondary);
     font-family: var(--font-title);
     margin-top: 1rem;
-    /* padding-left: 5vw; */
     font-weight: 550;
 }
-
+/* paragraph styling for whole website  */
 .section-para{
     color: var(--color-primary);
     font-size: var(--font-para);
-    /* padding-left: 5vw; */
+    padding-left: 5vw;
 }
+
 
 /* navbar  */
 #navbar{
     background: rgb(244, 237, 237);
+    position: fixed;
+    top: 0;
 }
-
-#navbarBranding > h4{
+#navbarBranding div h4{
     color: var(--color-secondary);
     font-weight: 800;
     font-size: 1.8rem;
 }
-/* #navbarBranding > h4 > span{
-    color: var(--color-primary);
-    font-weight: 800;
-    font-size: 2rem;
-} */
-
-#navbarBranding > p{
+#navbarBranding div p{
     color: var(--color-primary);
 }
-#navLinks > li > a{
+#navLinks a{
     color: var(--color-secondary);
     font-weight: 700;
 }
-#navLinks > li > a:hover{
+#navLinks a:hover{
     color: rgba(13, 155, 32, 0.699); 
     font-weight: 700;
 }
+#navbar i{
+    font-size: 2rem;
+    color: black;
+}
+#navbar button{
+    background-color: rgb(244, 237, 237);
+    border: none;
+}
+#navbar button:hover{
+    color: rgb(244, 237, 237);
+    border: none;
+}
+#navbar button:toggle{
+    color: rgb(244, 237, 237);
+}
+
+
 
 
 
 /* carousal  */
-/* adding slider image */
+/* adding slider image here */
 #carouselMain{
-    /* background: url(./images/3.jpg); */
-    height: 50vh;
+    height: 55vh;
     background-size: cover;
     background-repeat: no-repeat;
 }   
@@ -92,39 +106,45 @@ body{
 
 
 
-#card1 > a > h6 {
+
+/* card in the our college section  in the website  */
+
+#card1 h6 {
     color: var(--color-secondary);
 }
-#card1 >a {
+#card1 a {
     text-decoration: none;
 }
-#card1 > a > i:hover{
+#card1 i:hover{
     font-size: 3.7rem;
     color: rgb(255,193,7);
 }
 
-#card1 > a > i{
+#card1 i{
     color: var(--color-secondary);
     font-size: 3.5rem;
 }
-
 
 #card1{
     background: var(--bg-color);
     border: none;
 }
 
+
+
+/* styling for about us  */
+
 #about{
     background-size: cover;
     background-image: linear-gradient(var(--color-third),var(--color-primary));
 }
-#about >div > img{
+
+#about img{
     border-radius: 1rem;
 }
 
-section{
-    height: 80vh;
-}
+
+/* footer design  */
 
 footer > div > a{
     text-decoration: none;
